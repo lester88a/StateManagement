@@ -9,5 +9,7 @@
     <dx:ASPxButton ID="ASPxButton2" runat="server" OnClick="btnSubmit_Click" Text="Load UserControl 2"></dx:ASPxButton>
     <dx:ASPxButton ID="ASPxButton3" runat="server" OnClick="btnSubmit_Click" Text="Load UserControl 3"></dx:ASPxButton>
 
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+
 
 </asp:Content>
