@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="StateManagement.Global_asax" Language="C#" %>
