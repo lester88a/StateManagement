@@ -13,7 +13,7 @@ namespace StateManagement.UserControls
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            Debug.WriteLine("UC1 Page_Load");
+            Debug.WriteLine("UC3 Page_Load");
         }
 
         protected void ASPxButton1_Click(object sender, EventArgs e)
