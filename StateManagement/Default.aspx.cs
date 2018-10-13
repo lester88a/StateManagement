@@ -61,7 +61,7 @@ namespace StateManagement
                 UserControl2 userControl2 = Page.LoadControl("~/UserControls/UserControl2.ascx") as UserControl2;
 
                 //Create Event Handler for btnPost Click 
-                userControl2.btnPostClk += new UserControl2.btnPost_Click(userControl2_btnPostClick);
+                //userControl2.btnPostClk += new UserControl2.btnPost_Click(userControl2_btnPostClick);
 
                 this.Placeholder1.Controls.Add(userControl2);
 
@@ -89,11 +89,11 @@ namespace StateManagement
             lblName.Text = "Welcome " + userControl1.FirstName.Text + " " + userControl1.LastName.Text;
         }
 
-        void userControl2_btnPostClick(object sender, EventArgs e)
-        {
-            UserControl2 userControl2 = ((UserControl2)(sender));
-            lblName.Text = "UserControl2 button clicked with the result text: " + (userControl2.FindControl("Label1") as Label).Text;
-        }
+        //void userControl2_btnPostClick(object sender, EventArgs e)
+        //{
+        //    UserControl2 userControl2 = ((UserControl2)(sender));
+        //    lblName.Text = "UserControl2 button clicked with the result text: " + (userControl2.FindControl("Label1") as Label).Text;
+        //}
 
 
         protected void CreateUserControl()
@@ -141,7 +141,7 @@ namespace StateManagement
                             case "ASP.usercontrols_usercontrol2_ascx":
                                 UserControl2 userControl2 = Page.LoadControl("~/UserControls/UserControl2.ascx") as UserControl2;
                                 (userControl2.FindControl("Label1") as Label).Text = (((UserControl2)(Session[i])).FindControl("Label1") as Label).Text;
-                                userControl2.btnPostClk += new UserControl2.btnPost_Click(userControl2_btnPostClick);
+                                //userControl2.btnPostClk += new UserControl2.btnPost_Click(userControl2_btnPostClick);
                                 this.Placeholder1.Controls.Add(userControl2);
                                 break;
                         }

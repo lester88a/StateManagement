@@ -34,7 +34,7 @@ namespace StateManagement.UserControls
             Debug.WriteLine("UC2 Clicked");
             this.Label1.Text = "UserControl2 Button Clicked";
 
-            OnButtonDelegateClickEvent(e);
+            //OnButtonDelegateClickEvent(e);
         }
     }
 }
